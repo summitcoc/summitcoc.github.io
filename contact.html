@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Summit Church of Christ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Summit Church of Christ</h2>
+                <span class="location">Ludington, Michigan</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Welcome</a>
+                </li>
+                <li class="nav-item">
+                    <a href="beliefs.html" class="nav-link">What We Believe</a>
+                </li>
+                <li class="nav-item">
+                    <a href="elders.html" class="nav-link">About the Elders</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bulletin.html" class="nav-link">Weekly Bulletin</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you and answer any questions</p>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="content-section">
+                <h2>Get in Touch</h2>
+                <p>Whether you're looking for more information about our church, have questions about our beliefs, or would like to visit us, we'd love to hear from you. Our church family is always excited to welcome new visitors and answer any questions you might have.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>Contact Information</h2>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3>Our Location</h3>
+                        <p>Summit Church of Christ<br>
+                        Ludington, Michigan<br>
+                        <em>Specific address available upon request</em></p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>For phone contact information, please use the contact form below or speak with us after services.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Email</h3>
+                        <p>Please use the contact form below to send us a message, and we'll get back to you as soon as possible.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Worship Schedule</h2>
+                <div class="times-grid">
+                    <div class="time-card">
+                        <h3>Sunday Morning</h3>
+                        <p class="time">10:00 AM</p>
+                        <p class="description">Bible Study & Worship Service</p>
+                    </div>
+                    <div class="time-card">
+                        <h3>Sunday Evening</h3>
+                        <p class="time">6:00 PM</p>
+                        <p class="description">Evening Worship</p>
+                    </div>
+                    <div class="time-card">
+                        <h3>Wednesday</h3>
+                        <p class="time">7:00 PM</p>
+                        <p class="description">Bible Study & Prayer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Send Us a Message</h2>
+                <div class="contact-form">
+                    <form onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Tell us how we can help you or what questions you have..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="visit-interest">
+                                <input type="checkbox" id="visit-interest" name="visit-interest">
+                                I'm interested in visiting your church
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="prayer-request">
+                                <input type="checkbox" id="prayer-request" name="prayer-request">
+                                This is a prayer request
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Directions</h2>
+                <p>Summit Church of Christ is located in Ludington, Michigan. We're easily accessible and offer plenty of parking for visitors and members alike.</p>
+                <p><strong>For specific directions to our building, please:</strong></p>
+                <ul>
+                    <li>Contact us using the form above</li>
+                    <li>Speak with us after services</li>
+                    <li>Call during office hours</li>
+                </ul>
+                <p>We're happy to provide detailed directions and can even arrange for someone to meet you if you're visiting for the first time.</p>
+            </div>
+
+            <div class="content-section">
+                <h2>What to Expect</h2>
+                <p>If you're planning to visit us, here's what you can expect:</p>
+                <ul>
+                    <li><strong>Friendly Welcome:</strong> Our members are genuinely excited to meet visitors and make you feel at home</li>
+                    <li><strong>Casual Dress:</strong> While some prefer to dress up, you're welcome to come as you are</li>
+                    <li><strong>Biblical Worship:</strong> Our services focus on Scripture reading, singing, prayer, and communion</li>
+                    <li><strong>A Cappella Singing:</strong> We sing without instrumental accompaniment, as practiced in the early church</li>
+                    <li><strong>Children Welcome:</strong> We have nursery care and children's programs available</li>
+                    <li><strong>Fellowship:</strong> Plan to stay after services for coffee and conversation</li>
+                </ul>
+                <p>Please don't hesitate to ask questions - we're here to help and want you to feel comfortable!</p>
+            </div>
+
+            <div class="content-section">
+                <h2>Office Hours</h2>
+                <p>While our church family is available to help throughout the week, our regular office hours are:</p>
+                <ul>
+                    <li><strong>Monday - Friday:</strong> Please contact us for current office hours</li>
+                    <li><strong>Weekend:</strong> Available before and after worship services</li>
+                    <li><strong>Emergency:</strong> Our elders are available for urgent pastoral needs</li>
+                </ul>
+                <p>For immediate needs or emergencies, please don't hesitate to contact one of our elders directly.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Summit Church of Christ</h4>
+                    <p>Ludington, Michigan</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Welcome</a></li>
+                        <li><a href="beliefs.html">What We Believe</a></li>
+                        <li><a href="elders.html">About the Elders</a></li>
+                        <li><a href="bulletin.html">Weekly Bulletin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Thank you for your interest in Summit Church of Christ. We look forward to hearing from you!</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Summit Church of Christ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
